@@ -18,13 +18,17 @@ Responsivo para mobile.
 
 - Projetos 
 - https://henriquedouradoo.github.io/Website-Science/
+- 
 - https://henriquedouradoo.github.io/amavel.github.io/
+- 
 - [cafdaterra.wordpress.com](https://cafdaterra.wordpress.com/)
 
 
 - Links Profissionais
 https://www.linkedin.com/in/henrique-dourado-domingos-8a105a267/
+
 https://github.com/henriquedouradoo
+
 douradoprofissional@gmail.com
 
 
