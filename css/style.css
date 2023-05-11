@@ -7,10 +7,13 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins', sans-serif;
+   
 }
 
 body {
-  background: #222 
+  background: #222;
+  overflow-x: hidden;
+  
 }
 
 ::-webkit-scrollbar{
@@ -66,19 +69,20 @@ header{
 }
 
 .headlines h2{
-    color: #fff;
-    
+    color: #000000;
+    font-size: 3vw;
+    font-weight: 700;
+    text-transform: capitalize;
     text-align: center;
     padding: 30px;
     margin-top: 140px ;
+    transition: all 0.6s;
 }
 
-.headlines img{
-    width: 200px;
-    border-radius: 150px;
-    align-items: center;
-    margin-left: 43%;
+.headlines h2:hover {
+    color: #ffffff;
 }
+
 
 .main-text {
     padding: 5rem;
@@ -88,6 +92,7 @@ header{
     font-size: 4vw;
     text-transform: capitalize;
     color: #a49572;
+    margin-left: 80%;
 }
 .main-text h2 {
     font-size: 10vw;
@@ -130,4 +135,95 @@ header{
 
 .about-container {
     background: #a49572;
+    text-align: center;
+    justify-content: center;
 }
+
+.about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 25rem;
+    position: relative;
+    border-radius: 50%;
+}
+
+.about-img img{
+    margin-left: 1140px;
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid #000000;
+}
+
+
+
+.about-text {
+    text-align: center;
+    padding: 3rem;
+}
+
+.about-text p{
+    font-size: 1vw;
+    margin: 2rem 0 3rem;
+    text-transform: capitalize ;
+    text-shadow: 0 5px 10px #867a5e;
+    margin-top: -20px;
+}
+
+.about-text p::first-line{
+    color: #e3b54c;
+    text-shadow: 0 5px 10px hsl(0, 0%, 0%);
+}
+
+
+.projeto {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    background: #333;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.projetos {
+    width: 100%;
+    color: #efefef;
+    background: #222;
+    padding: 50px;
+}
+
+.projetos .headline{
+    align-items: center;
+    justify-content: center;
+    margin-left: 43%;
+}
+
+.headline {
+    color: #ffffff;
+    font-size: 2vw;
+}
+
+.projetos-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projetos-container p{
+    font-size: 25px;
+    margin: 18px;
+}
+.projetos-img  {
+    width: 300px;
+    border-radius: 30px;
+}
+
+.projeto img{
+    width: 500px;
+    border-radius: 10px;
+}
+
