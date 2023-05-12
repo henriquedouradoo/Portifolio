@@ -85,10 +85,35 @@ header{
     color: #ffffff;
 }
 
+.social-links a{
+    display: inline-flex;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    color: #a49572;
+    font-size: 2rem;
+    border: 2px solid #a49572;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 2rem 1.5rem 3rem 0;
+    transition: .5s ease;
+    margin-left: 92%;
+    margin-top: -10% ;
+}
+
+.social-links a:hover{
+    background: #a49572;
+    color: #000000;
+    box-shadow: 0 0 20px #a49572;
+}
 
 .main-text {
     padding: 5rem;
 }
+
+
 
 .main-text h3{
     font-size: 4vw;
@@ -430,4 +455,24 @@ header{
         margin-left: 24%;
         padding: 30px;
         color: rgb(0, 0, 0);
+}
+
+#contatos{
+    background: #636363;
+}
+
+.contatos h2{
+    color: #a49572;
+}
+
+.contatos h2:hover{
+    color: #000000;
+}
+
+.contatos h2::first-line{
+    color: #ffffff;
+}
+
+.contatos h4{
+   color:  #000000;
 }
