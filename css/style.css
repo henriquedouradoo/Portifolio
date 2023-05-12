@@ -1,5 +1,6 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,200&display=swap');
 
 *{
     margin: 0;
@@ -7,6 +8,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins', sans-serif;
+    
    
 }
 
@@ -133,48 +135,78 @@ header{
 }
 
 
-.about-container {
-    background: #a49572;
-    text-align: center;
-    justify-content: center;
-}
-
-.about-img {
+#about-section {
+    width: 100%;
+    height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 25rem;
-    height: 25rem;
-    position: relative;
-    border-radius: 50%;
+    padding: 80px 12%;
+    background: #fafafa;
+}
+.about-left img{
+    width: 420px;
+    height: auto;
+    transform: translateY(50px);
+    margin-left: -20%;
+    border-radius: 20px;
+}
+.about-right {
+    width: 55%;
+    margin-right: 15%;
 }
 
-.about-img img{
-    margin-left: 1140px;
-    width: 90%;
-    border-radius: 50%;
-    border: .2rem solid #000000;
+.about-right ul li {
+    display: flex;
+    align-items: center;
 }
 
-
-
-.about-text {
-    text-align: center;
-    padding: 3rem;
+.about-right h1 {
+    color: #a49572;
+    font-size: 37px;
+    margin-bottom: 5px;
 }
 
-.about-text p{
-    font-size: 1vw;
-    margin: 2rem 0 3rem;
-    text-transform: capitalize ;
-    text-shadow: 0 5px 10px #867a5e;
-    margin-top: -20px;
+.about-right p {
+    color: #444;
+    line-height: 26px;
+    font-size: 15px;
 }
 
-.about-text p::first-line{
-    color: #e3b54c;
-    text-shadow: 0 5px 10px hsl(0, 0%, 0%);
+.about-right .address {
+    margin: 25px 0;
 }
+
+.about-right .address ul li {
+    margin-bottom: 5px;
+}
+
+.address .address-logo {
+    margin-right: 15px;
+    color: #a49572;
+}
+
+.address .saprater {
+    margin: 0 35px;
+}
+
+.about-right .expertise ul {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.expertise h3 {
+    margin-bottom: 10px;
+}
+
+.expertise .expertise-logo {
+    font-size: 19px;
+    margin-right: 10px;
+    color: #a49572;
+}
+
 
 
 .projeto {
@@ -190,7 +222,9 @@ header{
 .projetos {
     width: 100%;
     color: #efefef;
-    background: #222;
+    background: url(../img/backgroundproj.png);
+    background-size: 50%;
+    background-position: 50%;
     padding: 50px;
 }
 
@@ -227,3 +261,173 @@ header{
     border-radius: 10px;
 }
 
+.skills_section{
+    width: 70%;
+    height: 100vh;
+    padding: 0px 24%;
+    background: #7d7d7d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -13%;
+}
+.skills_head{
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.skills_head h2{
+    font-size: 30px;
+    margin-bottom: -5px;
+    color: #a49572;
+}
+.skills_head h2 span{
+    color: #000000;
+}
+.skills_main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+.skills_main .skill_bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 10px;
+}
+.skill_bar .info p:nth-child(2){
+    font-weight: 500;
+    color: #000000;
+}
+.skill_bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+.skill_bar .bar span{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #a49572;
+    border-radius: 25px;
+}
+.skill_bar .bar .html{
+    width: 85%;
+    animation: html 2s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 100%;
+    }
+}
+.skill_bar .bar .css{
+    width: 75%;
+    animation: css 2s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+.skill_bar .bar .sass{
+    width: 80%;
+    animation: sass 2s;
+}
+@keyframes sass {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .js{
+    width: 5%;
+    animation: css 2s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .react{
+    width: 100%;
+    animation: react 2s;
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }100%{
+        width: 75%;
+    }
+}
+.skill_bar .bar .node{
+    width: 100%;
+    animation: node 2s;
+}
+@keyframes node {
+    0%{
+        width: 0%;
+    }100%{
+        width: 100%;
+    }
+}
+.skill_bar .bar .express{
+    width: 65%;
+    animation: express 2s;
+}
+@keyframes express {
+    0%{
+        width: 0%;
+    }100%{
+        width: 65%;
+    }
+}
+.skill_bar .bar .mongo{
+    width: 60%;
+    animation: mongo 2s;
+}
+@keyframes mongo {
+    0%{
+        width: 0%;
+    }100%{
+        width: 60%;
+    }
+}
+
+#clients{
+    background: #a495726c;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.client{
+    width: 99px;
+   justify-content: space-around;
+   align-items: center;
+  position:static;
+  
+  
+}
+
+.headline {
+        justify-content: center;
+        align-items: center;
+        margin-left: 24%;
+        padding: 30px;
+        color: rgb(0, 0, 0);
+}
