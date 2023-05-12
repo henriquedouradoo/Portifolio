@@ -1,5 +1,6 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,200&display=swap');
 
 *{
     margin: 0;
@@ -7,6 +8,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins', sans-serif;
+    
    
 }
 
@@ -83,10 +85,35 @@ header{
     color: #ffffff;
 }
 
+.social-links a{
+    display: inline-flex;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    color: #a49572;
+    font-size: 2rem;
+    border: 2px solid #a49572;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 2rem 1.5rem 3rem 0;
+    transition: .5s ease;
+    margin-left: 92%;
+    margin-top: -10% ;
+}
+
+.social-links a:hover{
+    background: #a49572;
+    color: #000000;
+    box-shadow: 0 0 20px #a49572;
+}
 
 .main-text {
     padding: 5rem;
 }
+
+
 
 .main-text h3{
     font-size: 4vw;
@@ -220,7 +247,7 @@ header{
 .projetos {
     width: 100%;
     color: #efefef;
-    background: url(img/backgroundproj.png);
+    background: url(../img/backgroundproj.png);
     background-size: 50%;
     background-position: 50%;
     padding: 50px;
@@ -260,9 +287,9 @@ header{
 }
 
 .skills_section{
-    width: 100%;
+    width: 70%;
     height: 100vh;
-    padding: 0px 13%;
+    padding: 0px 24%;
     background: #7d7d7d;
     display: flex;
     align-items: center;
@@ -280,10 +307,10 @@ header{
 .skills_head h2{
     font-size: 30px;
     margin-bottom: -5px;
-    color: #ffffff;
+    color: #a49572;
 }
 .skills_head h2 span{
-    color: #ffffff;
+    color: #000000;
 }
 .skills_main{
     width: 100%;
@@ -300,35 +327,36 @@ header{
 }
 .skill_bar .info p:nth-child(2){
     font-weight: 500;
+    color: #000000;
 }
 .skill_bar .bar{
     width: 100%;
     height: 10px;
-    background-color: rgba(255, 255, 255, 0.144);
+    background-color: #000000;
     border-radius: 25px;
     margin-top: 5px;
     position: relative;
 }
 .skill_bar .bar span{
-    width: 50%;
+    width: 100%;
     height: 100%;
     position: absolute;
-    background-color: #e74d06;
+    background-color: #a49572;
     border-radius: 25px;
 }
 .skill_bar .bar .html{
-    width: 90%;
+    width: 85%;
     animation: html 2s;
 }
 @keyframes html {
     0%{
         width: 0%;
     }100%{
-        width: 90%;
+        width: 100%;
     }
 }
 .skill_bar .bar .css{
-    width: 85%;
+    width: 75%;
     animation: css 2s;
 }
 @keyframes css {
@@ -350,7 +378,7 @@ header{
     }
 }
 .skill_bar .bar .js{
-    width: 80%;
+    width: 5%;
     animation: css 2s;
 }
 @keyframes js {
@@ -361,7 +389,7 @@ header{
     }
 }
 .skill_bar .bar .react{
-    width: 75%;
+    width: 100%;
     animation: react 2s;
 }
 @keyframes react {
@@ -372,14 +400,14 @@ header{
     }
 }
 .skill_bar .bar .node{
-    width: 70%;
+    width: 100%;
     animation: node 2s;
 }
 @keyframes node {
     0%{
         width: 0%;
     }100%{
-        width: 70%;
+        width: 100%;
     }
 }
 .skill_bar .bar .express{
@@ -403,4 +431,48 @@ header{
     }100%{
         width: 60%;
     }
+}
+
+#clients{
+    background: #a495726c;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.client{
+    width: 99px;
+   justify-content: space-around;
+   align-items: center;
+  position:static;
+  
+  
+}
+
+.headline {
+        justify-content: center;
+        align-items: center;
+        margin-left: 24%;
+        padding: 30px;
+        color: rgb(0, 0, 0);
+}
+
+#contatos{
+    background: #636363;
+}
+
+.contatos h2{
+    color: #a49572;
+}
+
+.contatos h2:hover{
+    color: #000000;
+}
+
+.contatos h2::first-line{
+    color: #ffffff;
+}
+
+.contatos h4{
+   color:  #000000;
 }
